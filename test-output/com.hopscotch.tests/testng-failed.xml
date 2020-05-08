@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [com.hopscotch.tests]">
+  <parameter name="loginName" value="manpreet"/>
+  <test parallel="none" name="Test1(failed)" preserve-order="true">
+    <parameter name="loginName" value="manpreet"/>
+    <classes>
+      <class name="com.hopscotch.tests.Login">
+        <methods>
+          <include name="emailLoginWithInvalidPassword"/>
+          <include name="emailLoginWithInvalidUsername"/>
+          <include name="emailLoginWithValidCredentials"/>
+          <include name="mobLoginWithInvalidMobile"/>
+          <include name="launchWebsite"/>
+          <include name="mobLoginWithValidCredentials"/>
+          <include name="startTest"/>
+          <include name="mobLoginWithInvalidPassword"/>
+        </methods>
+      </class> <!-- com.hopscotch.tests.Login -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [com.hopscotch.tests] -->

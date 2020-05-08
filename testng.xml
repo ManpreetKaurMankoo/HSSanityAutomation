@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="com.hopscotch.tests" >
+	<test name="Test1">
+    <parameter name="loginName" value="manpreet"/>
+	  <classes>
+	     <class name = "com.hopscotch.tests.Login"/>
+  	  </classes>
+  	</test>
+  	
+<!--   	<test name="Test2">
+	  <classes>
+	     <class name = "com.hopscotch.tests.Cart"/>
+  	  </classes>
+  	</test>
+  	
+	<test name="Test3">
+	  <classes>
+	     <class name = "com.hopscotch.tests.Search"/>
+  	  </classes>
+  	</test>
+  	
+ 	<test name="Test4">
+  	<parameter name="loginName" value="manpreet"/>
+	  <classes>
+	     <class name = "com.hopscotch.tests.UserProfile"/>
+  	  </classes>
+  	</test>  -->
+	
+</suite> <!-- com.hopscotch.tests -->

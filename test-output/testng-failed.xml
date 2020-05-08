@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)" preserve-order="true">
+    <classes>
+      <class name="com.hopscotch.tests.Search">
+        <methods>
+          <include name="launchWebsite"/>
+        </methods>
+      </class> <!-- com.hopscotch.tests.Search -->
+      <class name="com.hopscotch.tests.UserProfile">
+        <methods>
+          <include name="testAddAddress"/>
+          <include name="launchWebsite"/>
+          <include name="testChangeProfileDetails"/>
+        </methods>
+      </class> <!-- com.hopscotch.tests.UserProfile -->
+      <class name="com.hopscotch.tests.Login">
+        <methods>
+          <include name="emailLoginWithValidCredentials"/>
+          <include name="launchWebsite"/>
+          <include name="mobLoginWithValidCredentials"/>
+        </methods>
+      </class> <!-- com.hopscotch.tests.Login -->
+      <class name="com.hopscotch.tests.Cart">
+        <methods>
+          <include name="testIncreaseCartQty"/>
+          <include name="testAddToCart"/>
+          <include name="launchWebsite"/>
+          <include name="testAddPincode"/>
+        </methods>
+      </class> <!-- com.hopscotch.tests.Cart -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

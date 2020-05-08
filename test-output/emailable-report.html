@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.param,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.param td,table.param th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.param th {vertical-align:bottom}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.param td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.param tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">6</td><td class="numi">6</td><td class="numi">0</td><td class="numi_attn">6</td><td class="numi">166.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<a id="summary"></a>
+<table cellspacing=0 cellpadding=0 class="passed">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Default test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">com.hopscotch.tests.UserProfile<td><a href="#m1"><b>testAddAddress</b>  </a></td><td class="numi">1</td><td>1588945267010</td><td class="numi">35471</td></tr>
+<tr class="failedeven"><td rowspan="2">com.hopscotch.tests.Cart<td><a href="#m2"><b>testIncreaseCartQty</b>  </a></td><td class="numi">1</td><td>1588945308924</td><td class="numi">20062</td></tr><tr class="failedeven"><td><a href="#m3"><b>testAddPincode</b> (Pincode) </a></td><td class="numi">1</td><td>1588945328990</td><td class="numi">20062</td></tr>
+<tr class="failedodd"><td rowspan="2">com.hopscotch.tests.Login<td><a href="#m4"><b>mobLoginWithValidCredentials</b>  </a></td><td class="numi">1</td><td>1588945240632</td><td class="numi">0</td></tr><tr class="failedodd"><td><a href="#m5"><b>emailLoginWithValidCredentials</b>  </a></td><td class="numi">1</td><td>1588945220108</td><td class="numi">0</td></tr>
+<tr class="failedeven"><td rowspan="1">com.hopscotch.tests.UserProfile<td><a href="#m6"><b>testChangeProfileDetails</b>  </a></td><td class="numi">1</td><td>1588945302485</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Default test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="4">com.hopscotch.tests.Login<td><a href="#m7"><b>emailLoginWithInvalidPassword</b>  </a></td><td class="numi">1</td><td>1588945227638</td><td class="numi">3385</td></tr><tr class="passedodd"><td><a href="#m8"><b>emailLoginWithInvalidUsername</b>  </a></td><td class="numi">1</td><td>1588945237706</td><td class="numi">2925</td></tr><tr class="passedodd"><td><a href="#m9"><b>mobLoginWithInvalidPassword</b>  </a></td><td class="numi">1</td><td>1588945246149</td><td class="numi">4231</td></tr><tr class="passedodd"><td><a href="#m10"><b>mobLoginWithInvalidMobile</b>  </a></td><td class="numi">1</td><td>1588945260110</td><td class="numi">3523</td></tr>
+<tr class="passedeven"><td rowspan="1">com.hopscotch.tests.Cart<td><a href="#m11"><b>testAddToCart</b> (Cart) </a></td><td class="numi">1</td><td>1588945263634</td><td class="numi">3374</td></tr>
+<tr class="passedodd"><td rowspan="1">com.hopscotch.tests.Search<td><a href="#m12"><b>searchProduct</b>  </a></td><td class="numi">1</td><td>1588945302494</td><td class="numi">6423</td></tr>
+</table>
+<h1>Default test</h1>
+<a id="m1"></a><h2>com.hopscotch.tests.Login:mobLoginWithValidCredentials</h2>
+<div style="padding-left:3em">
+<p>
+Parameter &apos;loginName&apos; is required by @Test on method mobLoginWithValidCredentials but has not been marked @Optional or defined
+in /private/var/folders/8m/03z1c8513cs7x5p8k71rgnv40000gp/T/testng-eclipse-1490663942/testng-customsuite.xml</p>
+org.testng.internal.Parameters.createParameters(Parameters.java:155)
+<br/>at org.testng.internal.Parameters.createParameters(Parameters.java:355)
+<br/>at org.testng.internal.Parameters.handleParameters(Parameters.java:447)
+<br/>at org.testng.internal.Invoker.handleParameters(Invoker.java:1389)
+<br/>at org.testng.internal.Invoker.createParameters(Invoker.java:1081)
+<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1186)
+<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+<br/>at org.testng.TestRunner.privateRun(TestRunner.java:767)
+<br/>at org.testng.TestRunner.run(TestRunner.java:617)
+<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+<br/>at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+<br/>at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+<br/>at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+<br/>at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+<br/>at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+<br/>at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+<br/>at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+<br/>at org.testng.TestNG.run(TestNG.java:1030)
+<br/>at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+<br/>at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+<br/>at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m2"></a><h2>com.hopscotch.tests.Login:emailLoginWithValidCredentials</h2>
+<div style="padding-left:3em">
+<p>
+Parameter &apos;loginName&apos; is required by @Test on method emailLoginWithValidCredentials but has not been marked @Optional or defined
+in /private/var/folders/8m/03z1c8513cs7x5p8k71rgnv40000gp/T/testng-eclipse-1490663942/testng-customsuite.xml</p>
+org.testng.internal.Parameters.createParameters(Parameters.java:155)
+<br/>at org.testng.internal.Parameters.createParameters(Parameters.java:355)
+<br/>at org.testng.internal.Parameters.handleParameters(Parameters.java:447)
+<br/>at org.testng.internal.Invoker.handleParameters(Invoker.java:1389)
+<br/>at org.testng.internal.Invoker.createParameters(Invoker.java:1081)
+<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1186)
+<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+<br/>at org.testng.TestRunner.privateRun(TestRunner.java:767)
+<br/>at org.testng.TestRunner.run(TestRunner.java:617)
+<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+<br/>at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+<br/>at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+<br/>at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+<br/>at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+<br/>at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+<br/>at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+<br/>at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+<br/>at org.testng.TestNG.run(TestNG.java:1030)
+<br/>at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+<br/>at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+<br/>at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m3"></a><h2>com.hopscotch.tests.Cart:testAddPincode</h2>
+<div style="padding-left:3em">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;cart-pincode-container&apos;]//span[1]&quot;}
+  (Session info: chrome=81.0.4044.138)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;Prasad.local&apos;, ip: &apos;192.168.1.110&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.1&apos;, java.version: &apos;11.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: /var/folders/8m/03z1c8513cs...}, goog:chromeOptions: {debuggerAddress: localhost:52350}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: b4c217624953953fcbb6014383c73c3c
+*** Element info: {Using=xpath, value=//*[@class=&apos;cart-pincode-container&apos;]//span[1]}</p>
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+<br/>at com.hopscotch.seleniumutilities.SeleniumGeneralUtilitites.findElementByXpath(SeleniumGeneralUtilitites.java:31)
+<br/>at com.hopscotch.seleniumutilities.SeleniumWorkerUtilities.elementIdentifier(SeleniumWorkerUtilities.java:41)
+<br/>at com.hopscotch.seleniumutilities.SeleniumWorkerUtilities.workWithWebElement(SeleniumWorkerUtilities.java:13)
+<br/>at com.hopscotch.websiteutilities.HopscotchWebsiteUtilitites.enterPincode(HopscotchWebsiteUtilitites.java:93)
+<br/>at com.hopscotch.tests.Cart.testAddPincode(Cart.java:44)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m4"></a><h2>com.hopscotch.tests.UserProfile:testAddAddress</h2>
+<div style="padding-left:3em">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#payment&quot;}
+  (Session info: chrome=81.0.4044.138)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;Prasad.local&apos;, ip: &apos;192.168.1.110&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.1&apos;, java.version: &apos;11.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: /var/folders/8m/03z1c8513cs...}, goog:chromeOptions: {debuggerAddress: localhost:52456}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5514f0ab8a57aac2d20ff9ffdb5858f6
+*** Element info: {Using=id, value=payment}</p>
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
+<br/>at org.openqa.selenium.By$ById.findElement(By.java:188)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+<br/>at com.hopscotch.seleniumutilities.SeleniumGeneralUtilitites.findElementById(SeleniumGeneralUtilitites.java:19)
+<br/>at com.hopscotch.seleniumutilities.SeleniumWorkerUtilities.elementIdentifier(SeleniumWorkerUtilities.java:29)
+<br/>at com.hopscotch.seleniumutilities.SeleniumWorkerUtilities.workWithWebElement(SeleniumWorkerUtilities.java:13)
+<br/>at com.hopscotch.tests.UserProfile.testAddAddress(UserProfile.java:36)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m5"></a><h2>com.hopscotch.tests.Cart:testIncreaseCartQty</h2>
+<div style="padding-left:3em">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.cart-notification.clearfix&quot;}
+  (Session info: chrome=81.0.4044.138)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;Prasad.local&apos;, ip: &apos;192.168.1.110&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.1&apos;, java.version: &apos;11.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: /var/folders/8m/03z1c8513cs...}, goog:chromeOptions: {debuggerAddress: localhost:52350}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: b4c217624953953fcbb6014383c73c3c
+*** Element info: {Using=css selector, value=.cart-notification.clearfix}</p>
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:416)
+<br/>at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+<br/>at com.hopscotch.seleniumutilities.SeleniumGeneralUtilitites.findElementByCss(SeleniumGeneralUtilitites.java:27)
+<br/>at com.hopscotch.seleniumutilities.SeleniumWorkerUtilities.elementIdentifier(SeleniumWorkerUtilities.java:37)
+<br/>at com.hopscotch.seleniumutilities.SeleniumWorkerUtilities.workWithWebElement(SeleniumWorkerUtilities.java:13)
+<br/>at com.hopscotch.websiteutilities.HopscotchWebsiteUtilitites.increaseQty(HopscotchWebsiteUtilitites.java:69)
+<br/>at com.hopscotch.tests.Cart.testIncreaseCartQty(Cart.java:38)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m6"></a><h2>com.hopscotch.tests.UserProfile:testChangeProfileDetails</h2>
+<div style="padding-left:3em">
+<p>
+Parameter &apos;loginName&apos; is required by @Test on method testChangeProfileDetails but has not been marked @Optional or defined
+in /private/var/folders/8m/03z1c8513cs7x5p8k71rgnv40000gp/T/testng-eclipse-1490663942/testng-customsuite.xml</p>
+org.testng.internal.Parameters.createParameters(Parameters.java:155)
+<br/>at org.testng.internal.Parameters.createParameters(Parameters.java:355)
+<br/>at org.testng.internal.Parameters.handleParameters(Parameters.java:447)
+<br/>at org.testng.internal.Invoker.handleParameters(Invoker.java:1389)
+<br/>at org.testng.internal.Invoker.createParameters(Invoker.java:1081)
+<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1186)
+<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+<br/>at org.testng.TestRunner.privateRun(TestRunner.java:767)
+<br/>at org.testng.TestRunner.run(TestRunner.java:617)
+<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+<br/>at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+<br/>at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+<br/>at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+<br/>at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+<br/>at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+<br/>at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+<br/>at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+<br/>at org.testng.TestNG.run(TestNG.java:1030)
+<br/>at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+<br/>at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+<br/>at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m7"></a><h2>com.hopscotch.tests.Login:mobLoginWithInvalidMobile</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m8"></a><h2>com.hopscotch.tests.Login:mobLoginWithInvalidPassword</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m9"></a><h2>com.hopscotch.tests.Login:emailLoginWithInvalidPassword</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m10"></a><h2>com.hopscotch.tests.Search:searchProduct</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m11"></a><h2>com.hopscotch.tests.Cart:testAddToCart</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m12"></a><h2>com.hopscotch.tests.Login:emailLoginWithInvalidUsername</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
